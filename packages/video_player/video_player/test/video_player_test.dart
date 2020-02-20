@@ -50,6 +50,9 @@ class FakeController extends ValueNotifier<VideoPlayerValue>
   VideoFormat get formatHint => null;
 
   @override
+  Map<String, String> get headers => null;
+  
+  @override
   Future<ClosedCaptionFile> get closedCaptionFile => _loadClosedCaption();
 }
 
